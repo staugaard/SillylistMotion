@@ -1,5 +1,3 @@
-class AppDelegate
-  def application(application, didFinishLaunchingWithOptions:launchOptions)
-    true
-  end
+class AppDelegate < Kondi::Application
+  root_view ListController
 end
