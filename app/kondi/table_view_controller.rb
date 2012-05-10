@@ -21,6 +21,9 @@ module Kondi
       tableView.cellForRowAtIndexPath(index_path)
     end
 
+    def selected(index_path)
+    end
+
     def self.create
       instance = alloc.initWithStyle(UITableViewStylePlain)
       instance.wantsFullScreenLayout = true

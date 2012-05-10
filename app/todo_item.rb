@@ -7,6 +7,10 @@ class TodoItem
     @done  = !!options[:done]
   end
 
+  def toggle
+    self.done = !self.done
+  end
+
   def self.count
     all.size
   end

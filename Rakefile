@@ -10,6 +10,7 @@ Motion::Project::App.setup do |app|
     './app/kondi/table_view_cell.rb',
     './app/todo_item.rb',
     './app/list_controller.rb',
+    './app/list_cell.rb',
     './app/app_delegate.rb'
   ]
 end
