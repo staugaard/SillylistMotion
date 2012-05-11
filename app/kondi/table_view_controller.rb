@@ -9,7 +9,7 @@ module Kondi
     end
 
     def tableView(tableView, didSelectRowAtIndexPath:indexPath)
-      selected(indexPath)
+      cell_at(indexPath).run_after_callbacks :selected
     end
 
     def recycle_cell(id_or_class)
@@ -21,10 +21,7 @@ module Kondi
       tableView.cellForRowAtIndexPath(index_path)
     end
 
-    def selected(index_path)
-    end
-
-    def self.create
+    def self.new
       instance = alloc.initWithStyle(UITableViewStylePlain)
       instance.wantsFullScreenLayout = true
       instance

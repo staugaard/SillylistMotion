@@ -7,7 +7,7 @@ module Kondi
 
     def application(application, didFinishLaunchingWithOptions:launchOptions)
       @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.applicationFrame)
-      @window.rootViewController = self.class.root_view.create
+      @window.rootViewController = self.class.root_view.new
       @window.makeKeyAndVisible
       true
     end

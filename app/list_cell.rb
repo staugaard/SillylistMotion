@@ -1,5 +1,8 @@
 class ListCell < Kondi::TableViewCell
+
   attr_accessor :todo_item
+
+  after :selected, :toggle
 
   def todo_item=(item)
     @todo_item = item
@@ -15,4 +18,5 @@ class ListCell < Kondi::TableViewCell
     todo_item.toggle
     update
   end
+
 end

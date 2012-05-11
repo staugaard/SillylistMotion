@@ -21,4 +21,5 @@ class TodoItem
       items << TodoItem.new(:title => "Bar", :done => true)
     end
   end
+
 end

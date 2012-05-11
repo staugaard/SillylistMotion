@@ -1,5 +1,7 @@
 module Kondi
   class TableViewCell < UITableViewCell
+    include Callbacks
+
     ACCESSORY = {
       :none      => UITableViewCellAccessoryNone,
       :checkmark => UITableViewCellAccessoryCheckmark
@@ -13,7 +15,7 @@ module Kondi
        self.accessoryType = ACCESSORY[accessory_name] || UITableViewCellAccessoryNone
     end
 
-    def self.create(table_view_controller)
+    def self.new(table_view_controller)
       table_view_controller.recycle_cell(self) || alloc.initWithStyle(UITableViewCellStyleDefault, reuseIdentifier:identifier)
     end
 

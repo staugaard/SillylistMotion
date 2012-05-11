@@ -5,6 +5,7 @@ Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'SillylistMotion'
   app.files = [
+    './app/kondi/callbacks.rb',
     './app/kondi/application.rb',
     './app/kondi/table_view_controller.rb',
     './app/kondi/table_view_cell.rb',
