@@ -1,3 +1,5 @@
+require 'kondi/table_view_cell'
+
 class ListCell < Kondi::TableViewCell
 
   attr_accessor :todo_item

@@ -1,3 +1,5 @@
+require 'kondi/callbacks'
+
 module Kondi
   class TableViewCell < UITableViewCell
     include Callbacks

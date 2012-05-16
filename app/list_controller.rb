@@ -1,3 +1,7 @@
+require 'kondi/table_view_controller'
+require 'todo_item'
+require 'list_cell'
+
 class ListController < Kondi::TableViewController
 
   # required
