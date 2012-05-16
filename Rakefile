@@ -1,3 +1,5 @@
+require "bundler/setup"
+
 $:.unshift('/Library/RubyMotion/lib')
 require 'motion/project'
 require 'motion_require'
